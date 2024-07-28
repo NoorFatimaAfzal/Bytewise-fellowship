@@ -1,14 +1,14 @@
-# Movie Analysis Streamlit App
+# Netflix Movies Analysis Streamlit App
 
-This is a Streamlit application designed for analyzing movie data from Netflix. It includes various features to visualize and explore the dataset, including filtering by genre and analyzing movie duration and release year.
+This is a Streamlit application for analyzing Netflix movie data. The app provides various features to explore and visualize movies based on different attributes such as duration, genre, country, and type.
 
 ## Features
 
-- **Medal Tally Analysis**: View the medal tally of countries in the Olympics based on year and country selection.
-- **Overall Analysis**: Analyze general statistics about the Olympics, including the number of editions, host cities, sports, events, athletes, and nations.
-- **Country Wise Analysis**: View detailed analysis of a selected country's performance in the Olympics over the years, including medal tally and event performance.
-- **Athlete Wise Analysis**: Explore the age distribution of athletes, analyze successful athletes by sport, and compare height vs. weight statistics.
-- **Netflix Movie Filtering**: Filter Netflix movies based on their duration and genre. Users can view movies with a duration of less than 60 minutes and filter movies by genre to see their names and descriptions.
+1. **Movies Less than 60 Minutes**: View a list of movies with a duration of less than 60 minutes.
+2. **Movie Duration Scatter Plot**: Visualize movie durations by year of release with different colors representing genres.
+3. **Genre Analysis**: Filter and view movies based on selected genres along with their descriptions.
+4. **Country Analysis**: Filter and view movies based on the selected country along with their descriptions.
+5. **Type of Movies**: Filter and view movies based on their type (e.g., movie, series) along with their descriptions.
 
 ## Setup
 
@@ -17,10 +17,7 @@ This is a Streamlit application designed for analyzing movie data from Netflix. 
 - Python 3.6 or higher
 - Streamlit
 - Pandas
-- Scikit-learn
-- Plotly
 - Matplotlib
-- Seaborn
 
 ### Installation
 
@@ -42,47 +39,45 @@ This is a Streamlit application designed for analyzing movie data from Netflix. 
     pip install -r requirements.txt
     ```
 
-   Create a `requirements.txt` file with the following content:
+    Create a `requirements.txt` file with the following content:
 
     ```plaintext
     streamlit
     pandas
-    scikit-learn
-    plotly
     matplotlib
-    seaborn
     ```
 
 ## Usage
 
-1. Run the Streamlit app:
+1. Place your `netflix_data.csv` file in the project directory.
+2. Run the Streamlit app:
 
     ```sh
     streamlit run app.py
     ```
 
-2. Access the app in your web browser at `http://localhost:8501`.
+3. Access the app in your web browser at `http://localhost:8501`.
 
 ## How to Use the App
 
-1. **Medal Tally Analysis**:
-    - Select an option from the sidebar to view medal tally analysis by year and country.
-  
-2. **Overall Analysis**:
-    - View key statistics and trends in the Olympics, including participating nations, events, and athletes over time.
-  
-3. **Country Wise Analysis**:
-    - Choose a country from the sidebar to see its performance over the years, including medal tally and event performance.
+1. **Movies Less than 60 Minutes**:
+    - Select this option to view movies with a duration of less than 60 minutes.
 
-4. **Athlete Wise Analysis**:
-    - Explore athlete data, including age distribution, successful athletes by sport, and height vs. weight statistics.
+2. **Movie Duration Scatter Plot**:
+    - Choose this option to see a scatter plot of movie durations by release year, with different colors representing genres.
 
-5. **Netflix Movie Filtering**:
-    - Filter movies based on their duration and genre. Select a genre to view movie names and descriptions.
+3. **Genre Analysis**:
+    - Select a genre from the dropdown to filter movies by genre. You can also view all genres.
+
+4. **Country Analysis**:
+    - Select a country from the dropdown to filter movies by country. You can also view movies from all countries.
+
+5. **Type of Movies**:
+    - Choose a type of movie from the dropdown to filter by type (e.g., movie, series). You can also view all types.
 
 ## Contributing
 
-Feel free to fork the repository and submit pull requests. Please ensure your contributions are well-documented and tested.
+Feel free to fork the repository and submit pull requests. Please ensure that your contributions are well-documented and tested.
 
 ## Contact
 
